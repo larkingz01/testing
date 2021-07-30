@@ -37,3 +37,13 @@ div {
     bottom: 395px;
     left: 580px;
 }
+
+.ig_logo{
+    position: absolute;
+    width: 33px;
+    height: 30px;
+    background-image: url('https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png');
+    background-size: cover;
+    bottom: 392.5px;
+    left: 540px;
+}
