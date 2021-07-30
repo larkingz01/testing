@@ -47,3 +47,12 @@ div {
     bottom: 392.5px;
     left: 540px;
 }
+
+.describe{
+    width: 600px;
+    height: 300px;
+    background-color: #FDF5E6;
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+}
