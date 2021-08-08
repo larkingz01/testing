@@ -1,0 +1,111 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+html, body{
+    margin: 0px;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    cursor: url('./Content/cur116.cur'), auto;
+}
+.left_side{
+    height: 100%; width: 50%; position: absolute; overflow: hidden;
+}
+.right_side{
+    height: 100%; width: 50%; position: absolute; overflow: hidden; background-color: #3C3C3C; left: 50%;
+}
+.profile_pic{
+    height: 60%; width: 60%; top: 20%; left: 20%; position: absolute;
+    background-image: url('./Content/profile.jpg'); background-size: cover; border-radius: 5%;
+}
+.greeting{
+    height: 60%; width: 60%; top: 20%; left: 25%; position: absolute; font-size: 5vh; font-weight: bold; user-select: none;
+}
+.describe{
+    color: #F0FFFF;
+    height: 60%; width: 60%; top: 33%; left: 50%; position: absolute; font-size: 3vh; user-select: none;
+}
+.owner{
+    height: 60%; width: 60%; top: 95%; left: 80%; position: absolute; font-size: 2vh; user-select: none;
+}
+.bg_pic{
+    height: 100%; width: 100%; position: absolute;
+    background-image: url('./Content/profile.jpg'); background-size: cover;
+    filter: blur(15px);
+}
+.box1{
+    line-height: 50px;
+    height: 8%;
+    text-align: center;
+    width: 40%;
+    cursor: pointer;
+    background-color: #3C3C3C;
+    top: 45%; left: 25%;
+    user-select: none;
+
+}
+.box2{
+    line-height: 50px;
+    height: 8%;
+    text-align: center;
+    width: 40%;
+    cursor: pointer;
+    background-color: #3C3C3C;
+    top: 47%; left: 25%;
+    user-select: none;
+}
+.box3{
+    line-height: 50px;
+    height: 8%;
+    text-align: center;
+    width: 40%;
+    cursor: pointer;
+    background-color: #3C3C3C;
+    top: 49%; left: 25%;
+    user-select: none;
+}
+.btn {
+    color: #f0f8ff;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn span {
+    transition: all 0.3s;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+}
+.btn:hover span {
+    letter-spacing: 2px;
+}
+.btn:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+}
+.btn:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
